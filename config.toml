@@ -1,0 +1,15 @@
+[server]
+listen_addr = "0.0.0.0"
+listen_port = 7878
+whitelist = [
+  "127.0.0.1",
+]
+
+[proxy]
+protocol = "http"
+target_addr = "127.0.0.1"
+target_port = 3000
+
+[tls]
+cert_path = "/etc/example/localhost+2.pem"
+key_path = "/etc/exapmle/localhost+2-key.pem"
